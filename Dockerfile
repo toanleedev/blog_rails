@@ -8,6 +8,8 @@ ENV BUNDLE_VERSION 2.4.22
 
 RUN gem install bundler --version "$BUNDLE_VERSION"
 
+RUN apt-get update && apt-get install -y nodejs
+
 RUN bundle install
 
 EXPOSE 3000
