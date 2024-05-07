@@ -46,6 +46,9 @@ gem 'bootsnap', require: false
 
 gem 'figaro'
 
+gem 'bootstrap'
+gem 'sassc-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

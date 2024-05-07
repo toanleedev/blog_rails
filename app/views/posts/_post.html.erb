@@ -1,11 +1,9 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
-  <div>
-    <strong>Content:</strong>
-    <%= post.body %>
+<div class="card mb-3" id="<%= dom_id post %>">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text">
+      <%= post.body %>
+    </p>
+    <%= link_to "Show this post", post, class: "card-link" %>
   </div>
-
 </div>
