@@ -39,5 +39,6 @@ module BlogApp
       g.test_framework    nil
       g.jbuilder          false
     end
+    config.hosts << ENV['PUBLIC_HOST']
   end
 end
